@@ -1,0 +1,5 @@
+![Simulator Screenshot - iPhone 15 Plus - 2024-01-29 at 00 28 51](https://github.com/Rishabhhx/TummocShopping/assets/54091681/a6a0fb8b-f759-4bc4-889a-acb60b5a9ce4)
+![Simulator Screenshot - iPhone 15 Plus - 2024-01-29 at 00 28 53](https://github.com/Rishabhhx/TummocShopping/assets/54091681/886d0c3e-2e70-4eb8-a8a3-bd1bc04f9234)
+![Simulator Screenshot - iPhone 15 Plus - 2024-01-29 at 00 28 56](https://github.com/Rishabhhx/TummocShopping/assets/54091681/c017598d-8b37-46e5-9161-5d68a19bd3ec)
+![Simulator Screenshot - iPhone 15 Plus - 2024-01-29 at 00 29 09](https://github.com/Rishabhhx/TummocShopping/assets/54091681/adf2fabf-5e06-4a6d-8e58-0ce1f7cb20a7)
+![Simulator Screenshot - iPhone 15 Plus - 2024-01-29 at 00 29 16](https://github.com/Rishabhhx/TummocShopping/assets/54091681/b0992877-2ea8-4b73-8410-e28e8597e676)
