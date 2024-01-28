@@ -7,22 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181091272B669017008C76ED /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181091262B669017008C76ED /* FavouriteViewModel.swift */; };
+		1810912C2B66C31C008C76ED /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810912B2B66C31C008C76ED /* CartViewModel.swift */; };
 		181CAD782B60FA4700F1B583 /* TummocShoppingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181CAD772B60FA4700F1B583 /* TummocShoppingApp.swift */; };
-		181CAD7A2B60FA4700F1B583 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181CAD792B60FA4700F1B583 /* ContentView.swift */; };
+		181CAD7A2B60FA4700F1B583 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181CAD792B60FA4700F1B583 /* HomeScreen.swift */; };
 		181CAD7C2B60FA4800F1B583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181CAD7B2B60FA4800F1B583 /* Assets.xcassets */; };
 		181CAD7F2B60FA4800F1B583 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181CAD7E2B60FA4800F1B583 /* Preview Assets.xcassets */; };
-		181CAD812B60FA4800F1B583 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181CAD802B60FA4800F1B583 /* Persistence.swift */; };
-		181CAD842B60FA4800F1B583 /* TummocShopping.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 181CAD822B60FA4800F1B583 /* TummocShopping.xcdatamodeld */; };
+		181CAD8D2B6151A000F1B583 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181CAD8C2B6151A000F1B583 /* FavouriteView.swift */; };
+		181CAD8F2B6158E800F1B583 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181CAD8E2B6158E800F1B583 /* CartView.swift */; };
+		181CAD912B6161E400F1B583 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181CAD902B6161E400F1B583 /* HomeModel.swift */; };
+		181CAD932B6163B900F1B583 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181CAD922B6163B900F1B583 /* HomeViewModel.swift */; };
+		181CAD952B61649B00F1B583 /* shopping.json in Resources */ = {isa = PBXBuildFile; fileRef = 181CAD942B61649B00F1B583 /* shopping.json */; };
+		1849242C2B66586300B4298D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1849242B2B66586300B4298D /* CoreDataManager.swift */; };
+		1849242F2B66636A00B4298D /* TummocDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1849242D2B66636A00B4298D /* TummocDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		181091262B669017008C76ED /* FavouriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
+		1810912B2B66C31C008C76ED /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		181CAD742B60FA4700F1B583 /* TummocShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TummocShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181CAD772B60FA4700F1B583 /* TummocShoppingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TummocShoppingApp.swift; sourceTree = "<group>"; };
-		181CAD792B60FA4700F1B583 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		181CAD792B60FA4700F1B583 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		181CAD7B2B60FA4800F1B583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		181CAD7E2B60FA4800F1B583 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		181CAD802B60FA4800F1B583 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		181CAD832B60FA4800F1B583 /* TummocShopping.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TummocShopping.xcdatamodel; sourceTree = "<group>"; };
+		181CAD8C2B6151A000F1B583 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
+		181CAD8E2B6158E800F1B583 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		181CAD902B6161E400F1B583 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		181CAD922B6163B900F1B583 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		181CAD942B61649B00F1B583 /* shopping.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shopping.json; sourceTree = "<group>"; };
+		1849242B2B66586300B4298D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		1849242E2B66636A00B4298D /* TummocDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TummocDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181091282B66C1D1008C76ED /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				181CAD8C2B6151A000F1B583 /* FavouriteView.swift */,
+				181091262B669017008C76ED /* FavouriteViewModel.swift */,
+			);
+			path = Favourite;
+			sourceTree = "<group>";
+		};
+		181091292B66C1E5008C76ED /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				181CAD792B60FA4700F1B583 /* HomeScreen.swift */,
+				181CAD902B6161E400F1B583 /* HomeModel.swift */,
+				181CAD922B6163B900F1B583 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1810912A2B66C1F7008C76ED /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				181CAD8E2B6158E800F1B583 /* CartView.swift */,
+				1810912B2B66C31C008C76ED /* CartViewModel.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
 		181CAD6B2B60FA4700F1B583 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +98,13 @@
 			isa = PBXGroup;
 			children = (
 				181CAD772B60FA4700F1B583 /* TummocShoppingApp.swift */,
-				181CAD792B60FA4700F1B583 /* ContentView.swift */,
+				181091292B66C1E5008C76ED /* Home */,
+				1810912A2B66C1F7008C76ED /* Cart */,
+				181091282B66C1D1008C76ED /* Favourite */,
+				1849242B2B66586300B4298D /* CoreDataManager.swift */,
+				1849242D2B66636A00B4298D /* TummocDataModel.xcdatamodeld */,
 				181CAD7B2B60FA4800F1B583 /* Assets.xcassets */,
-				181CAD802B60FA4800F1B583 /* Persistence.swift */,
-				181CAD822B60FA4800F1B583 /* TummocShopping.xcdatamodeld */,
+				181CAD942B61649B00F1B583 /* shopping.json */,
 				181CAD7D2B60FA4800F1B583 /* Preview Content */,
 			);
 			path = TummocShopping;
@@ -132,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				181CAD7F2B60FA4800F1B583 /* Preview Assets.xcassets in Resources */,
+				181CAD952B61649B00F1B583 /* shopping.json in Resources */,
 				181CAD7C2B60FA4800F1B583 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,9 +189,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				181CAD842B60FA4800F1B583 /* TummocShopping.xcdatamodeld in Sources */,
-				181CAD812B60FA4800F1B583 /* Persistence.swift in Sources */,
-				181CAD7A2B60FA4700F1B583 /* ContentView.swift in Sources */,
+				181CAD8F2B6158E800F1B583 /* CartView.swift in Sources */,
+				181CAD932B6163B900F1B583 /* HomeViewModel.swift in Sources */,
+				181CAD912B6161E400F1B583 /* HomeModel.swift in Sources */,
+				1849242F2B66636A00B4298D /* TummocDataModel.xcdatamodeld in Sources */,
+				181CAD8D2B6151A000F1B583 /* FavouriteView.swift in Sources */,
+				181091272B669017008C76ED /* FavouriteViewModel.swift in Sources */,
+				1810912C2B66C31C008C76ED /* CartViewModel.swift in Sources */,
+				1849242C2B66586300B4298D /* CoreDataManager.swift in Sources */,
+				181CAD7A2B60FA4700F1B583 /* HomeScreen.swift in Sources */,
 				181CAD782B60FA4700F1B583 /* TummocShoppingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,13 +406,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		181CAD822B60FA4800F1B583 /* TummocShopping.xcdatamodeld */ = {
+		1849242D2B66636A00B4298D /* TummocDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				181CAD832B60FA4800F1B583 /* TummocShopping.xcdatamodel */,
+				1849242E2B66636A00B4298D /* TummocDataModel.xcdatamodel */,
 			);
-			currentVersion = 181CAD832B60FA4800F1B583 /* TummocShopping.xcdatamodel */;
-			path = TummocShopping.xcdatamodeld;
+			currentVersion = 1849242E2B66636A00B4298D /* TummocDataModel.xcdatamodel */;
+			path = TummocDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
