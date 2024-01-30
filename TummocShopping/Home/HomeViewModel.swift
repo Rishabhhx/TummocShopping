@@ -26,9 +26,9 @@ class HomeViewModel: ObservableObject {
                 let decoder = JSONDecoder()
                 listData = try decoder.decode(ListData.self, from: data)
                 if UserDefaults.standard.value(forKey: "dataFetch") is Bool {
-                    UserDefaults.standard.set(true, forKey: "dataFetch")
                     getAllItems()
                 } else {
+                    UserDefaults.standard.set(true, forKey: "dataFetch")
                     clearPreviousData()
                     createItem()
                     getAllItems()
