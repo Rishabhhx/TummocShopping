@@ -11,44 +11,31 @@ import CoreData
 class FavouriteViewModel: ObservableObject {
     
     @Published var favList : [ItemsEntity] = []
-    
+    @Published var favData : [FavouriteEntity] = []
     let manager = CoreDataManager.shared
     
     func getFavList() {
-        favList = []
         let fetchRequest = NSFetchRequest<FavouriteEntity>(entityName: "FavouriteEntity")
         do {
-            let data = try manager.context.fetch(fetchRequest)
-            if let totalItems = data.first?.items?.allObjects as? [ItemsEntity] {
-                for item in totalItems {
-                    favList.append(item)
-                }
+            favData = try manager.context.fetch(fetchRequest)
+            if let totalItems = favData.first?.items?.allObjects as? [ItemsEntity] {
+                favList = totalItems
             }
         } catch {
             print(error)
         }
     }
     
-    func updateItemMakeFavourite(item: ItemsEntity, fav: Bool) {
-        item.isFavourite = fav
-        addOrRemoveFavList(item: item, fav: fav)
+    func updateItemMakeFavourite(item: ItemsEntity) {
+        item.isFavourite = false
+        removeFavList(item: item)
     }
     
-    func addOrRemoveFavList(item: ItemsEntity, fav: Bool) {
-        do {
-            let fetchRequest = NSFetchRequest<FavouriteEntity>(entityName: "FavouriteEntity")
-            let favData = try manager.context.fetch(fetchRequest)
-            if let favFirst = favData.first {
-                if fav {
-                    favFirst.addToItems(item)
-                } else {
-                    favFirst.removeFromItems(item)
-                }
-            }
-        } catch {
-            print(error)
+    func removeFavList(item: ItemsEntity) {
+        if let favFirst = favData.first {
+            favFirst.removeFromItems(item)
+            manager.saveItem()
+            getFavList()
         }
-        manager.saveItem()
-        getFavList()
     }
 }

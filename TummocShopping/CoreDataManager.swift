@@ -29,6 +29,7 @@ class CoreDataManager {
     
     func saveItem() {
         do {
+            print("SAVED DATA")
             try context.save()
         } catch {
             print(error)

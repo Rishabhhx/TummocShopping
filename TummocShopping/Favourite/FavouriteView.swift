@@ -91,7 +91,7 @@ struct FavouriteCellView: View {
             Spacer()
             VStack {
                 Button(action: {
-                    viewModel.updateItemMakeFavourite(item: item ?? ItemsEntity(), fav: !(item?.isFavourite ?? false))
+                    viewModel.updateItemMakeFavourite(item: item ?? ItemsEntity())
                 }, label: {
                     Image(systemName: item?.isFavourite ?? false ? "heart.fill" : "heart")
                         .resizable()

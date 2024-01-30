@@ -5,7 +5,6 @@
 //  Created by Rishabh Sharma(Personal) on 24/01/24.
 //
 
-import Foundation
 import CoreData
 import UIKit
 
@@ -46,21 +45,6 @@ extension HomeViewModel {
         do {
             let fetchRequest = NSFetchRequest<CategoryEntity>(entityName: "CategoryEntity")
             model = try manager.context.fetch(fetchRequest)
-//            for category in model {
-//                print("Category Name: \(category.name ?? "")")
-//                print("Category ID: \(category.id ?? "")")
-//                
-//                if let items = category.items?.allObjects as? [ItemsEntity] {
-//                    for item in items {
-//                        print("Item Name: \(item.name ?? "")")
-//                        print("Item ID: \(item.id ?? "")")
-//                        print("Item Icon: \(item.icon ?? "")")
-//                        print("Item Price: \(item.price)")
-//                        print("---")
-//                    }
-//                }
-//                print("==========")
-//            }
         } catch {
             print(error)
         }
@@ -86,11 +70,6 @@ extension HomeViewModel {
         manager.saveItem()
     }
     
-    func deleteItem(item: CategoryEntity) {
-        manager.context.delete(item)
-        manager.saveItem()
-    }
-    
     func updateItemMakeFavourite(item: ItemsEntity, fav: Bool) {
         item.isFavourite = fav
         addOrRemoveFavList(item: item, fav: fav)
@@ -101,10 +80,8 @@ extension HomeViewModel {
             let fetchRequest = NSFetchRequest<CartEntity>(entityName: "CartEntity")
             let cartData = try manager.context.fetch(fetchRequest)
             if let cartFirst = cartData.first {
-                if let totalItems = cartFirst.items?.allObjects as? [ItemsEntity] {
-                    item.quantity += 1
-                    cartFirst.addToItems(item)
-                }
+                item.quantity += 1
+                cartFirst.addToItems(item)
             } else {
                 let data = CartEntity(context: manager.context)
                 item.quantity += 1
@@ -136,10 +113,6 @@ extension HomeViewModel {
         } catch {
             print(error)
         }
-    }
-    
-    func updateItem(item: CategoryEntity?, name: String) {
-        manager.saveItem()
     }
     
     func clearPreviousData() {
