@@ -15,6 +15,7 @@ class HomeViewModel: ObservableObject {
     @Published var pushToCart : Bool = false
     @Published var listData : ListData?
     @Published var model : [CategoryEntity] = []
+    @Published var pushToProfile : Bool = false
 
     let manager = CoreDataManager.shared
 

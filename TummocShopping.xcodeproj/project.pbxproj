@@ -20,6 +20,8 @@
 		181CAD952B61649B00F1B583 /* shopping.json in Resources */ = {isa = PBXBuildFile; fileRef = 181CAD942B61649B00F1B583 /* shopping.json */; };
 		1849242C2B66586300B4298D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1849242B2B66586300B4298D /* CoreDataManager.swift */; };
 		1849242F2B66636A00B4298D /* TummocDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1849242D2B66636A00B4298D /* TummocDataModel.xcdatamodeld */; };
+		187B3BCA2B7206AA0087B303 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B3BC92B7206AA0087B303 /* ProfileView.swift */; };
+		18E4A7A02B720C1500D8CA3A /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E4A79F2B720C1500D8CA3A /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		181CAD942B61649B00F1B583 /* shopping.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shopping.json; sourceTree = "<group>"; };
 		1849242B2B66586300B4298D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		1849242E2B66636A00B4298D /* TummocDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TummocDataModel.xcdatamodel; sourceTree = "<group>"; };
+		187B3BC92B7206AA0087B303 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		18E4A79F2B720C1500D8CA3A /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 				181091292B66C1E5008C76ED /* Home */,
 				1810912A2B66C1F7008C76ED /* Cart */,
 				181091282B66C1D1008C76ED /* Favourite */,
+				187B3BCB2B7206AE0087B303 /* Profile */,
 				1849242B2B66586300B4298D /* CoreDataManager.swift */,
 				1849242D2B66636A00B4298D /* TummocDataModel.xcdatamodeld */,
 				181CAD7B2B60FA4800F1B583 /* Assets.xcassets */,
@@ -116,6 +121,15 @@
 				181CAD7E2B60FA4800F1B583 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		187B3BCB2B7206AE0087B303 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				187B3BC92B7206AA0087B303 /* ProfileView.swift */,
+				18E4A79F2B720C1500D8CA3A /* ProfileViewModel.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +209,11 @@
 				1849242F2B66636A00B4298D /* TummocDataModel.xcdatamodeld in Sources */,
 				181CAD8D2B6151A000F1B583 /* FavouriteView.swift in Sources */,
 				181091272B669017008C76ED /* FavouriteViewModel.swift in Sources */,
+				18E4A7A02B720C1500D8CA3A /* ProfileViewModel.swift in Sources */,
 				1810912C2B66C31C008C76ED /* CartViewModel.swift in Sources */,
 				1849242C2B66586300B4298D /* CoreDataManager.swift in Sources */,
 				181CAD7A2B60FA4700F1B583 /* HomeScreen.swift in Sources */,
+				187B3BCA2B7206AA0087B303 /* ProfileView.swift in Sources */,
 				181CAD782B60FA4700F1B583 /* TummocShoppingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,7 @@ struct HomeScreen: View {
         NavigationStack {
             ZStack {
                 VStack {
-                    HomeScreenHeader(pushToFav: $viewModel.pushToFav,pushToCart: $viewModel.pushToCart)
+                    HomeScreenHeader(pushToFav: $viewModel.pushToFav,pushToCart: $viewModel.pushToCart, pushToProfile: $viewModel.pushToProfile)
                     ScrollView(.vertical,showsIndicators: false) {
                         LazyVStack {
                             ForEach((viewModel.model), id: \.self) {item in
@@ -49,6 +49,8 @@ struct HomeScreen: View {
 struct HomeScreenHeader: View {
     @Binding var pushToFav: Bool
     @Binding var pushToCart: Bool
+    @Binding var pushToProfile: Bool
+
     var body: some View {
         let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
         let height = window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
@@ -62,6 +64,14 @@ struct HomeScreenHeader: View {
             .padding(.leading, 20)
             Spacer()
             HStack(spacing: 15) {
+                Button(action: {
+                    pushToProfile.toggle()
+                }, label: {
+                    Image(systemName: "person")
+                })
+                .navigationDestination(isPresented: $pushToProfile) {
+                    ProfileView()
+                }
                 Button(action: {
                     pushToFav.toggle()
                 }, label: {
